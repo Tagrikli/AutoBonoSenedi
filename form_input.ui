@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>458</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="button_prepare">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>490</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hazırla</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ödeme Günü</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Türk Lirası</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_price">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>60</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>İsim - Ünvan</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_name">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>100</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Adres</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Telefon Numarası</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_phone">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>250</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TC Numarası</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_id">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>290</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kefil</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_name_kefil">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>330</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kefil TC Numarası</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_kefil_id">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>370</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Düzenleme Tarihi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>450</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kaç Aylık</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="edit_amount">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>450</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="date_month">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>121</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Ocak</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Şubat</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mart</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nisan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mayıs</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Haziran</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Temmuz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ağustos</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Eylül</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ekim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kasım</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Aralık</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="date_day">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>21</y>
+      <width>41</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>01</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="date_year">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2022</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="date_month_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>409</y>
+      <width>121</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Ocak</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Şubat</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mart</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nisan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mayıs</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Haziran</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Temmuz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ağustos</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Eylül</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ekim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kasım</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Aralık</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="date_year_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>410</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2022</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="date_day_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>410</y>
+      <width>41</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>01</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="edit_address">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>140</y>
+      <width>250</width>
+      <height>101</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_reset">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>490</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sıfırla</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>458</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

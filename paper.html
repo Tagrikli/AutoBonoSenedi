@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <style>
+            * {
+                font-size: xx-large;
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 2100px;
+                min-height: 250px;
+            }
+
+            #paper {
+                width: 100%;
+                height: 100%;
+                padding: 50px;
+                margin: 50px;
+
+                border-bottom: 5px dashed black;
+                border-top: 5px dashed black;
+
+            }
+            div {
+                margin: 5px;
+            }
+
+            #first-row {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            .first-row-item {
+                position: relative;
+                text-align: center;
+                flex: 1;
+            }
+
+            #second-row {
+                padding: 10px;
+            }
+
+            #third-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: stretch;
+            }
+
+            #third-row-left {
+                display: flex;
+                flex-direction: column;
+                flex: 2;
+                padding: 10px;
+            }
+
+            .person-info {
+                display: flex;
+            }
+            .person-info-header {
+                font-weight: bold;
+                min-width: 300px;
+            }
+
+            .person-info-value {
+                text-decoration: underline;
+            }
+
+            #third-row-right {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                justify-content: space-evenly;
+            }
+
+            .modification-date {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            .mod-date-header {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .mod-date-value {
+                text-align: center;
+            }
+
+            .signatures {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex: 2;
+            }
+
+            .signature {
+                flex:1;
+                text-align: center;
+            }
+
+            .header {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .value {
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="paper">
+            <div id="first-row">
+                <div class="first-row-item">
+                    <div class="header">Ödeme Günü</div>
+                    <div class="value">{{pay_date}}</div>
+                </div>
+                <div class="first-row-item">
+                    <div class="header">Türk Lirası</div>
+                    <div class="value">{{price}}</div>
+                </div>
+                <div class="first-row-item">
+                    <div class="header">Kuruş</div>
+                    <div class="value">--</div>
+                </div>
+                <div class="first-row-item">
+                    <div class="header">Keside Yeri</div>
+                    <div class="value">İST.</div>
+                </div>
+                <div class="first-row-item">
+                    <div class="header">No.</div>
+                    <div class="value">{{paper_id}}</div>
+                </div>
+            </div>
+
+            <div id="second-row">
+                <span>
+                    İşbu emre Muharrem senedim mukabilinde
+                    {{pay_date_long}} tarihinde Sayın Albeta Enerji İnş. San. ve
+                    Tic. Ltd. Şti. veyahut emrühavalesine yıkarıda yazılı
+                    yalnız {{price_long}} Türk Lirası - Krş. ödeyeceğim. Bedeli
+                    Nakten Ahzolunmuştur.
+                </span>
+                <span>
+                    İhtilaf vukuunda İstanbul Anadolu Mahkemelerinin
+                    selahiyetini şimdiden kabul ederim.
+                </span>
+            </div>
+
+            <div id="third-row">
+                <div id="third-row-left">
+                    <div class="header">Borçlunun</div>
+
+                    <div class="person-info">
+                        <div class="person-info-header">İsim - Ünvan</div>
+                        <div class="person-info-value">{{person_name}}</div>
+                    </div>
+
+                    <div class="person-info">
+                        <div class="person-info-header">Adres</div>
+                        <div class="person-info-value">{{address}}</div>
+                    </div>
+
+                    <div class="person-info">
+                        <div class="person-info-header">Tel</div>
+                        <div class="person-info-value">{{phone}}</div>
+                    </div>
+
+                    <div class="person-info">
+                        <div class="person-info-header">V.D. No / T.C. No.</div>
+                        <div class="person-info-value">{{person_id}}</div>
+                    </div>
+
+                    <div class="person-info">
+                        <div class="person-info-header">Kefil</div>
+                        <div class="person-info-value">{{kefil_name}}</div>
+                    </div>
+
+                    <div class="person-info">
+                        <div class="person-info-header">V.D. No / T.C. No.</div>
+                        <div class="person-info-value">{{kefil_id}}</div>
+                    </div>
+                </div>
+                <div id="third-row-right">
+                    <div class="modification-date">
+                        <div class="mod-date-header">Düzenleme Tarihi</div>
+                        <div class="mod-date-value">{{mod_date}}</div>
+                    </div>
+                    <div class="signatures">
+                        <div class="signature">İmza</div>
+                        <div class="signature">İmza</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
