@@ -22,6 +22,8 @@ class FormApp(QMainWindow):
         self.ui.setupUi(self)
 
         self.info_default = {
+            'paper_id':"1",
+
             'pay_date_day': '1',
             'pay_date_month': '0',
             'pay_date_year': '2022',
@@ -180,7 +182,7 @@ class FormApp(QMainWindow):
 
         self.info_ = self.info
 
-        self.info_['id'] = str(id)
+        self.info_['paper_id'] = str(id)
         self.info_['pay_date'] = pay_date
 
         template = Template(open('paper.html').read())
@@ -203,7 +205,7 @@ class FormApp(QMainWindow):
         pdf_filename = self._pages2PDF(pages)
         self._openPDF(pdf_filename)
 
-            
+        self.resetForm()
 
 
 
